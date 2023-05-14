@@ -4,17 +4,6 @@ export async function getAllPosts() {
 }
 
 export default async function Posts() {
-//   const [posts, setPosts] = useState([]);
-
-//   useEffect(() => {
-//     axios.get("")
-//       .then(response => {
-//         setPosts(response.data);
-//       })
-//       .catch(error => {
-//         console.log(error);
-//       });
-//   }, []);(
 const posts = await getAllPosts();
 
   return (
